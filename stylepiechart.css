@@ -1,0 +1,25 @@
+.tableauPlaceholder {
+  position: relative;
+  width: 80%; /* Mengatur lebar menjadi 80% dari wadah induk untuk ukuran yang lebih besar */
+  max-width: 1200px; /* Batas maksimum lebar agar tidak terlalu besar di layar lebar */
+  height: auto; /* Mengatur tinggi secara otomatis berdasarkan aspek rasio */
+  margin: 20px auto; /* Memusatkan secara horizontal dengan jarak atas-bawah 20px */
+  display: block; /* Memastikan elemen dapat dipusatkan */
+}
+
+.tableauViz {
+  width: 100% !important; /* Memastikan visualisasi Tableau mengisi wadah sepenuhnya */
+  height: auto !important; /* Mengatur tinggi secara otomatis */
+  min-height: 500px; /* Ukuran minimum agar Pie Chart tidak terlalu kecil */
+}
+
+@media (max-width: 768px) {
+  .tableauPlaceholder {
+    width: 90%; /* Membuat lebih lebar di layar kecil */
+    margin: 10px auto; /* Mengurangi margin di layar kecil */
+  }
+
+  .tableauViz {
+    min-height: 400px; /* Menyesuaikan tinggi minimum untuk layar kecil */
+  }
+}

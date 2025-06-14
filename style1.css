@@ -1,0 +1,12 @@
+.tableauPlaceholder {
+  width: 200%;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 3px;
+}
+
+@media (max-width: 768px) {
+  .tableauPlaceholder {
+    max-width: 200%;
+  }
+}
